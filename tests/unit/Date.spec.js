@@ -6,7 +6,7 @@ describe('HeaderCorrect', () => {
     const wrapper = mount(Header);
 
     let monthnames = ["JAN","FEB","MAR","APR","MAY","JUNE","JUL","AUG","SEP","OCT","NOV","DEC"];
-    let days = ["SUDNAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
+    let days = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"];
     it('Check if Header displays correct things', ()=> {
         let today = new Date();
         let date = today.getDate() < 10 ?  `0${today.getDate()}` : today.getDate();
